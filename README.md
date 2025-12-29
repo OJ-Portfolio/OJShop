@@ -8,7 +8,7 @@ This project implements core e-commerce functionality including product manageme
 ## Technologies Used
 - **Backend:** ASP.NET Core MVC  
 - **Database:** SQL Server / EF Core  
-- **Authentication:** Identity / JWT (if implemented)  
+- **Authentication:** JWT  
 - **ORM:** Entity Framework Core  
 - **Tools:** Visual Studio, Git, Postman  
 
