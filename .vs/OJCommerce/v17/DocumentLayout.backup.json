@@ -1,0 +1,1162 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\services\\carts\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\services\\carts\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\controllers\\carts\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\controllers\\carts\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\repositories\\carts\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\repositories\\carts\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\models\\carts\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\models\\carts\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\mapper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\mapper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\dtos\\carts\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\dtos\\carts\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\models\\products\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\models\\products\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\models\\carts\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\models\\carts\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\controllers\\category\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\controllers\\category\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\controllers\\roles\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\controllers\\roles\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\migrations\\20251225011923_cartentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\migrations\\20251225011923_cartentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\repositories\\carts\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\repositories\\carts\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\models\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\models\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\services\\carts\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\services\\carts\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\services\\users\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\services\\users\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\controllers\\user\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\controllers\\user\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\dtos\\carts\\createupdatecartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\dtos\\carts\\createupdatecartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\dtos\\carts\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\dtos\\carts\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\services\\products\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\services\\products\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\controllers\\product\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\controllers\\product\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\services\\products\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\services\\products\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\dtos\\pagedr\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\dtos\\pagedr\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\dtos\\products\\productquerydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\dtos\\products\\productquerydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\repositories\\products\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\repositories\\products\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\repositories\\products\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\repositories\\products\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\services\\vendors\\vendordomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\services\\vendors\\vendordomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\controllers\\vendor\\vendorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\controllers\\vendor\\vendorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\services\\vendors\\vendorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\services\\vendors\\vendorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\controllers\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\controllers\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\controllers\\auth\\refreshtokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\controllers\\auth\\refreshtokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\helpers\\minimumageattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\helpers\\minimumageattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\services\\categories\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\services\\categories\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\services\\roles\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\services\\roles\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\exceptions\\businessruleviolationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\exceptions\\businessruleviolationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\repositories\\vendors\\vendorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\repositories\\vendors\\vendorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\repositories\\vendors\\ivendorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\repositories\\vendors\\ivendorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\services\\roles\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\services\\roles\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\dtos\\vendors\\createupdatevendordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\dtos\\vendors\\createupdatevendordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\dtos\\vendors\\vendorinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\dtos\\vendors\\vendorinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\models\\vendors\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\models\\vendors\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\dtos\\users\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\dtos\\users\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\dtos\\users\\createupdateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\dtos\\users\\createupdateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\services\\vendors\\ivendorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\services\\vendors\\ivendorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\migrations\\20251217092104_addne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\migrations\\20251217092104_addne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\models\\categories\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\models\\categories\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\models\\roles\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\models\\roles\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\models\\roles\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\models\\roles\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\dtos\\roles\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\dtos\\roles\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\dtos\\roles\\createupdateroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\dtos\\roles\\createupdateroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\enums\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\enums\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\dtos\\roles\\assignroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\dtos\\roles\\assignroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\models\\products\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\models\\products\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\ojcommerce.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\ojcommerce.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\models\\tokens\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\models\\tokens\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\dtos\\users\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\dtos\\users\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\dtos\\users\\refreshtokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\dtos\\users\\refreshtokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\repositories\\categories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\repositories\\categories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\models\\orders\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\models\\orders\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\models\\transactions\\paymenttransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\models\\transactions\\paymenttransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\models\\orders\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\models\\orders\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\models\\coupons\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\models\\coupons\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|c:\\users\\admin\\source\\repos\\ojcommerce\\ojcommerce\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C42B28E-F4E0-4625-BF67-79E032ECD026}|OJCommerce\\OJCommerce.csproj|solutionrelative:ojcommerce\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Repositories\\Categories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Repositories\\Categories\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Repositories\\Categories\\CategoryRepository.cs",
+              "RelativeToolTip": "OJCommerce\\Repositories\\Categories\\CategoryRepository.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwB8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T09:54:58.568Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\.gitignore",
+              "RelativeDocumentMoniker": "OJCommerce\\.gitignore",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\.gitignore",
+              "RelativeToolTip": "OJCommerce\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-29T05:55:11.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Carts\\CartService.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Services\\Carts\\CartService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Carts\\CartService.cs",
+              "RelativeToolTip": "OJCommerce\\Services\\Carts\\CartService.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAgwIYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T15:31:56.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Mapper\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Mapper\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Mapper\\MappingProfile.cs",
+              "RelativeToolTip": "OJCommerce\\Mapper\\MappingProfile.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAowFgAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T22:54:59.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Program.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Program.cs",
+              "RelativeToolTip": "OJCommerce\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAASwDkAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T13:30:39.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Carts\\CartItem.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Models\\Carts\\CartItem.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Carts\\CartItem.cs",
+              "RelativeToolTip": "OJCommerce\\Models\\Carts\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T14:37:06.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Products\\Product.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Models\\Products\\Product.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Products\\Product.cs",
+              "RelativeToolTip": "OJCommerce\\Models\\Products\\Product.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T12:57:20.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Repositories\\Carts\\CartRepository.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Repositories\\Carts\\CartRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Repositories\\Carts\\CartRepository.cs",
+              "RelativeToolTip": "OJCommerce\\Repositories\\Carts\\CartRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T14:47:38.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\Carts\\CartController.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Controllers\\Carts\\CartController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\Carts\\CartController.cs",
+              "RelativeToolTip": "OJCommerce\\Controllers\\Carts\\CartController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T04:18:41.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CartItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Carts\\CartItemDto.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Dtos\\Carts\\CartItemDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Carts\\CartItemDto.cs",
+              "RelativeToolTip": "OJCommerce\\Dtos\\Carts\\CartItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T14:44:47.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Carts\\Cart.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Models\\Carts\\Cart.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Carts\\Cart.cs",
+              "RelativeToolTip": "OJCommerce\\Models\\Carts\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T14:34:56.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\Roles\\RoleController.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Controllers\\Roles\\RoleController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\Roles\\RoleController.cs",
+              "RelativeToolTip": "OJCommerce\\Controllers\\Roles\\RoleController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T21:43:52.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\Category\\CategoryController.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Controllers\\Category\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\Category\\CategoryController.cs",
+              "RelativeToolTip": "OJCommerce\\Controllers\\Category\\CategoryController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T10:24:11.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ICartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Repositories\\Carts\\ICartRepository.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Repositories\\Carts\\ICartRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Repositories\\Carts\\ICartRepository.cs",
+              "RelativeToolTip": "OJCommerce\\Repositories\\Carts\\ICartRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T14:46:46.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ICartService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Carts\\ICartService.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Services\\Carts\\ICartService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Carts\\ICartService.cs",
+              "RelativeToolTip": "OJCommerce\\Services\\Carts\\ICartService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T15:31:13.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "OJCommerce\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAA7wCAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T13:12:05.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20251225011923_cartEntities.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Migrations\\20251225011923_cartEntities.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Migrations\\20251225011923_cartEntities.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Migrations\\20251225011923_cartEntities.cs",
+              "RelativeToolTip": "OJCommerce\\Migrations\\20251225011923_cartEntities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T01:21:24.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Users\\User.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Models\\Users\\User.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Users\\User.cs",
+              "RelativeToolTip": "OJCommerce\\Models\\Users\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T12:55:26.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Users\\UserService.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Services\\Users\\UserService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Users\\UserService.cs",
+              "RelativeToolTip": "OJCommerce\\Services\\Users\\UserService.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAIAwwFoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T21:46:46.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\User\\UserController.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Controllers\\User\\UserController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\User\\UserController.cs",
+              "RelativeToolTip": "OJCommerce\\Controllers\\User\\UserController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T14:56:16.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CreateUpdateCartItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Carts\\CreateUpdateCartItemDto.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Dtos\\Carts\\CreateUpdateCartItemDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Carts\\CreateUpdateCartItemDto.cs",
+              "RelativeToolTip": "OJCommerce\\Dtos\\Carts\\CreateUpdateCartItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T14:45:34.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CartDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Carts\\CartDto.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Dtos\\Carts\\CartDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Carts\\CartDto.cs",
+              "RelativeToolTip": "OJCommerce\\Dtos\\Carts\\CartDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T14:44:20.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Products\\IProductService.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Services\\Products\\IProductService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Products\\IProductService.cs",
+              "RelativeToolTip": "OJCommerce\\Services\\Products\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:58:15.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PagedResult.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\PagedR\\PagedResult.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Dtos\\PagedR\\PagedResult.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\PagedR\\PagedResult.cs",
+              "RelativeToolTip": "OJCommerce\\Dtos\\PagedR\\PagedResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:13:06.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProductQueryDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Products\\ProductQueryDto.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Dtos\\Products\\ProductQueryDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Products\\ProductQueryDto.cs",
+              "RelativeToolTip": "OJCommerce\\Dtos\\Products\\ProductQueryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:11:20.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Products\\ProductService.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Services\\Products\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Products\\ProductService.cs",
+              "RelativeToolTip": "OJCommerce\\Services\\Products\\ProductService.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAUwJoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T08:40:32.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\Product\\ProductController.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Controllers\\Product\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\Product\\ProductController.cs",
+              "RelativeToolTip": "OJCommerce\\Controllers\\Product\\ProductController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwEEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T08:41:41.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Repositories\\Products\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Repositories\\Products\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Repositories\\Products\\IProductRepository.cs",
+              "RelativeToolTip": "OJCommerce\\Repositories\\Products\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:20:58.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Categories\\CategoryService.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Services\\Categories\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Categories\\CategoryService.cs",
+              "RelativeToolTip": "OJCommerce\\Services\\Categories\\CategoryService.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAA5wDoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T10:15:45.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UnauthorizedException.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Exceptions\\UnauthorizedException.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Exceptions\\UnauthorizedException.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Exceptions\\UnauthorizedException.cs",
+              "RelativeToolTip": "OJCommerce\\Exceptions\\UnauthorizedException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T09:54:57.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "OJCommerce\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T09:54:13.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "BusinessRuleViolationException.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Exceptions\\BusinessRuleViolationException.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Exceptions\\BusinessRuleViolationException.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Exceptions\\BusinessRuleViolationException.cs",
+              "RelativeToolTip": "OJCommerce\\Exceptions\\BusinessRuleViolationException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T09:53:11.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "VendorDomainService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Vendors\\VendorDomainService.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Services\\Vendors\\VendorDomainService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Vendors\\VendorDomainService.cs",
+              "RelativeToolTip": "OJCommerce\\Services\\Vendors\\VendorDomainService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T09:34:15.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "MinimumAgeAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Helpers\\MinimumAgeAttribute.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Helpers\\MinimumAgeAttribute.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Helpers\\MinimumAgeAttribute.cs",
+              "RelativeToolTip": "OJCommerce\\Helpers\\MinimumAgeAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T09:18:01.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "VendorService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Vendors\\VendorService.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Services\\Vendors\\VendorService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Vendors\\VendorService.cs",
+              "RelativeToolTip": "OJCommerce\\Services\\Vendors\\VendorService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T13:44:55.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "IVendorService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Vendors\\IVendorService.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Services\\Vendors\\IVendorService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Vendors\\IVendorService.cs",
+              "RelativeToolTip": "OJCommerce\\Services\\Vendors\\IVendorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T13:40:50.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "VendorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Repositories\\Vendors\\VendorRepository.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Repositories\\Vendors\\VendorRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Repositories\\Vendors\\VendorRepository.cs",
+              "RelativeToolTip": "OJCommerce\\Repositories\\Vendors\\VendorRepository.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDYAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T13:02:53.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IVendorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Repositories\\Vendors\\IVendorRepository.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Repositories\\Vendors\\IVendorRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Repositories\\Vendors\\IVendorRepository.cs",
+              "RelativeToolTip": "OJCommerce\\Repositories\\Vendors\\IVendorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T11:23:54.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "CreateUpdateVendorDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Vendors\\CreateUpdateVendorDto.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Dtos\\Vendors\\CreateUpdateVendorDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Vendors\\CreateUpdateVendorDto.cs",
+              "RelativeToolTip": "OJCommerce\\Dtos\\Vendors\\CreateUpdateVendorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T11:18:24.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "VendorController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\Vendor\\VendorController.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Controllers\\Vendor\\VendorController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\Vendor\\VendorController.cs",
+              "RelativeToolTip": "OJCommerce\\Controllers\\Vendor\\VendorController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T11:14:33.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "20251217092104_AddNe.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Migrations\\20251217092104_AddNe.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Migrations\\20251217092104_AddNe.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Migrations\\20251217092104_AddNe.cs",
+              "RelativeToolTip": "OJCommerce\\Migrations\\20251217092104_AddNe.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T09:21:15.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Repositories\\Products\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Repositories\\Products\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Repositories\\Products\\ProductRepository.cs",
+              "RelativeToolTip": "OJCommerce\\Repositories\\Products\\ProductRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAcwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T08:40:14.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Middlewares\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "OJCommerce\\Middlewares\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T08:34:31.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Roles\\RoleService.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Services\\Roles\\RoleService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Roles\\RoleService.cs",
+              "RelativeToolTip": "OJCommerce\\Services\\Roles\\RoleService.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAwwGwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T08:40:54.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IRoleService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Roles\\IRoleService.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Services\\Roles\\IRoleService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Services\\Roles\\IRoleService.cs",
+              "RelativeToolTip": "OJCommerce\\Services\\Roles\\IRoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:57:33.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "AssignRoleDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Roles\\AssignRoleDto.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Dtos\\Roles\\AssignRoleDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Roles\\AssignRoleDto.cs",
+              "RelativeToolTip": "OJCommerce\\Dtos\\Roles\\AssignRoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:55:04.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "CreateUpdateRoleDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Roles\\CreateUpdateRoleDto.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Dtos\\Roles\\CreateUpdateRoleDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Roles\\CreateUpdateRoleDto.cs",
+              "RelativeToolTip": "OJCommerce\\Dtos\\Roles\\CreateUpdateRoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:54:36.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "RoleDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Roles\\RoleDto.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Dtos\\Roles\\RoleDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Roles\\RoleDto.cs",
+              "RelativeToolTip": "OJCommerce\\Dtos\\Roles\\RoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:54:09.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Roles\\Role.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Models\\Roles\\Role.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Roles\\Role.cs",
+              "RelativeToolTip": "OJCommerce\\Models\\Roles\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:42:51.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Roles\\UserRole.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Models\\Roles\\UserRole.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Roles\\UserRole.cs",
+              "RelativeToolTip": "OJCommerce\\Models\\Roles\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:42:19.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "VendorInfoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Vendors\\VendorInfoDto.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Dtos\\Vendors\\VendorInfoDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Vendors\\VendorInfoDto.cs",
+              "RelativeToolTip": "OJCommerce\\Dtos\\Vendors\\VendorInfoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T11:11:29.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "RefreshTokenController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\Auth\\RefreshTokenController.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Controllers\\Auth\\RefreshTokenController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\Auth\\RefreshTokenController.cs",
+              "RelativeToolTip": "OJCommerce\\Controllers\\Auth\\RefreshTokenController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T11:22:28.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "RefreshTokenResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Users\\RefreshTokenResponseDto.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Dtos\\Users\\RefreshTokenResponseDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Users\\RefreshTokenResponseDto.cs",
+              "RelativeToolTip": "OJCommerce\\Dtos\\Users\\RefreshTokenResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T09:39:40.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "RefreshTokenRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Users\\RefreshTokenRequestDto.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Dtos\\Users\\RefreshTokenRequestDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Users\\RefreshTokenRequestDto.cs",
+              "RelativeToolTip": "OJCommerce\\Dtos\\Users\\RefreshTokenRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T09:38:14.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Tokens\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Models\\Tokens\\RefreshToken.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Tokens\\RefreshToken.cs",
+              "RelativeToolTip": "OJCommerce\\Models\\Tokens\\RefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T09:06:14.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\Auth\\AuthController.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Controllers\\Auth\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\Auth\\AuthController.cs",
+              "RelativeToolTip": "OJCommerce\\Controllers\\Auth\\AuthController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T12:11:27.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "OJCommerce\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T18:25:32.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CreateUpdateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Users\\CreateUpdateUserDto.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Dtos\\Users\\CreateUpdateUserDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Users\\CreateUpdateUserDto.cs",
+              "RelativeToolTip": "OJCommerce\\Dtos\\Users\\CreateUpdateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T14:43:53.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Users\\UserDto.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Dtos\\Users\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Dtos\\Users\\UserDto.cs",
+              "RelativeToolTip": "OJCommerce\\Dtos\\Users\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T14:42:59.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "OJCommerce.csproj",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\OJCommerce.csproj",
+              "RelativeDocumentMoniker": "OJCommerce\\OJCommerce.csproj",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\OJCommerce.csproj",
+              "RelativeToolTip": "OJCommerce\\OJCommerce.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-12T13:17:37.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "PaymentStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Enums\\PaymentStatus.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Enums\\PaymentStatus.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Enums\\PaymentStatus.cs",
+              "RelativeToolTip": "OJCommerce\\Enums\\PaymentStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T13:06:52.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Enums\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Enums\\OrderStatus.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Enums\\OrderStatus.cs",
+              "RelativeToolTip": "OJCommerce\\Enums\\OrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T13:06:12.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Coupon.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Coupons\\Coupon.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Models\\Coupons\\Coupon.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Coupons\\Coupon.cs",
+              "RelativeToolTip": "OJCommerce\\Models\\Coupons\\Coupon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T13:00:33.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "PaymentTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Transactions\\PaymentTransaction.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Models\\Transactions\\PaymentTransaction.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Transactions\\PaymentTransaction.cs",
+              "RelativeToolTip": "OJCommerce\\Models\\Transactions\\PaymentTransaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T12:59:52.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Orders\\OrderItem.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Models\\Orders\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Orders\\OrderItem.cs",
+              "RelativeToolTip": "OJCommerce\\Models\\Orders\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T12:59:10.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Orders\\Order.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Models\\Orders\\Order.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Orders\\Order.cs",
+              "RelativeToolTip": "OJCommerce\\Models\\Orders\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T12:58:41.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Products\\ProductImage.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Models\\Products\\ProductImage.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Products\\ProductImage.cs",
+              "RelativeToolTip": "OJCommerce\\Models\\Products\\ProductImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T12:57:47.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Categories\\Category.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Models\\Categories\\Category.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Categories\\Category.cs",
+              "RelativeToolTip": "OJCommerce\\Models\\Categories\\Category.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T12:56:05.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Vendor.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Vendors\\Vendor.cs",
+              "RelativeDocumentMoniker": "OJCommerce\\Models\\Vendors\\Vendor.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\Models\\Vendors\\Vendor.cs",
+              "RelativeToolTip": "OJCommerce\\Models\\Vendors\\Vendor.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T12:52:14.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\appsettings.json",
+              "RelativeDocumentMoniker": "OJCommerce\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\OJCommerce\\OJCommerce\\appsettings.json",
+              "RelativeToolTip": "OJCommerce\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-12T12:50:16.14Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

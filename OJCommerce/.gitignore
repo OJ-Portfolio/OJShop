@@ -1,0 +1,21 @@
+﻿# Visual Studio temporary files
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+*.pdb
+
+# Build results
+bin/
+obj/
+
+# Rider/VS Code
+.idea/
+*.code-workspace
+
+# Publish folders
+publish/
+
+# Node / NPM (if any frontend later)
+node_modules/
