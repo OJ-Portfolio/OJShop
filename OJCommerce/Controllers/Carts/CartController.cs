@@ -30,5 +30,23 @@ namespace OJCommerce.Controllers.Carts
         {
             return await _cartService.GetCartAsync();
         }
+
+        [HttpPut("edit-cart")]
+        public async Task<CartDto> UpdateCart(CreateUpdateCartItemDto input)
+        {
+            return await _cartService.UpdateCartItemAsync(input);
+        }
+
+        [HttpPost("remove-items(s)-from-cart")]
+        public async Task<CartDto> RemoveCartItem(Guid productId)
+        {
+            return await _cartService.RemoveCartItemAsync(productId);
+        }
+
+        [HttpPost("clear-cart")]
+        public async Task<CartDto> ClearCart()
+        {
+            return await _cartService.ClearCartAsync();
+        }
     }
 }

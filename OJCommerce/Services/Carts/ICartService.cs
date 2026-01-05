@@ -8,5 +8,6 @@ namespace OJCommerce.Services.Carts
         Task<CartDto> AddToCartAsync(CreateUpdateCartItemDto input);
         Task<CartDto> UpdateCartItemAsync(CreateUpdateCartItemDto input);
         Task<CartDto> RemoveCartItemAsync(Guid productId);
+        Task<CartDto> ClearCartAsync();
     }
 }

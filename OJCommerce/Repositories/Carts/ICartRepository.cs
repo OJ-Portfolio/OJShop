@@ -9,5 +9,6 @@ namespace OJCommerce.Repositories.Carts
         Task AddCartItemAsync(CartItem item);
         Task UpdateCartItemAsync(CartItem item);
         Task RemoveCartItemAsync(CartItem item);
+        Task ClearCartAsync(Cart cart);
     }
 }

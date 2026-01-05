@@ -21,6 +21,7 @@ using OJCommerce.Services.Vendors;
 using OJCommerce.Helpers;
 using OJCommerce.Repositories.Carts;
 using OJCommerce.Services.Carts;
+using OJCommerce.Services.Checkout;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -55,7 +56,7 @@ builder.Services.AddAuthentication(options =>
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(key),
         ValidateLifetime = true,
-        ClockSkew = TimeSpan.FromDays(7)   // Token expires every 7 days
+        ClockSkew = TimeSpan.FromDays(20)   // Token expires every 7 days
     };
 
     // CUSTOM ERROR RESPONSES
@@ -99,6 +100,7 @@ builder.Services.AddScoped<IVendorService, VendorService>();
 builder.Services.AddScoped<VendorDomainService>();
 builder.Services.AddScoped<ICartRepository,CartRepository>();
 builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<ICheckoutService, CheckoutService>();
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 builder.Services.AddControllersWithViews();
 builder.Services.AddControllers();

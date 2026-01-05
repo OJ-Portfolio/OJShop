@@ -49,5 +49,12 @@ namespace OJCommerce.Repositories.Carts
              _context.CartItems.Update(item);
             await _context.SaveChangesAsync();
         }
+
+        public async Task ClearCartAsync(Cart cart)
+        {
+            _context.RemoveRange(cart.Items);
+            await _context.SaveChangesAsync();
+        }
+
     }
 }

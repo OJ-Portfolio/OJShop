@@ -121,14 +121,49 @@ namespace OJCommerce.Services.Carts
             };
         }
 
-        public Task<CartDto> RemoveCartItemAsync(Guid productId)
+        public async Task<CartDto> RemoveCartItemAsync(Guid productId)
         {
-            throw new NotImplementedException();
+            var currentUser = _userService.GetCurrentUser();
+            var userCart = await _cartRepository.GetCartItemAsync(currentUser, productId);
+            if (userCart == null) throw new NotFoundException("item(s) not found");
+
+            await _cartRepository.RemoveCartItemAsync(userCart);
+            await _context.SaveChangesAsync();
+            var updatedCart = await _cartRepository.GetCartByUserAsync(currentUser);
+            return _mapper.Map<CartDto>(updatedCart);
         }
 
-        public Task<CartDto> UpdateCartItemAsync(CreateUpdateCartItemDto input)
+
+        public async Task<CartDto> UpdateCartItemAsync(CreateUpdateCartItemDto input)
         {
-            throw new NotImplementedException();
+            var currentUser = _userService.GetCurrentUser();
+            var userCart = await _cartRepository.GetCartItemAsync(currentUser, input.ProductId);
+            if (userCart == null) throw new NotFoundException("item(s) not found");
+
+            if (input.Quantity <= 0)
+            {
+                await _cartRepository.RemoveCartItemAsync(userCart);
+            }
+            else
+            {
+                if (input.Quantity > userCart.Product.Stock) throw new BusinessRuleViolationException("Quantity cannot exceed available stock");
+                userCart.Quantity = input.Quantity;
+                await _cartRepository.UpdateCartItemAsync(userCart);
+            }
+            var updatedCart = await _cartRepository.GetCartByUserAsync(currentUser);
+            return _mapper.Map<CartDto>(updatedCart);
+        }
+
+        public async Task<CartDto> ClearCartAsync()
+        {
+            var currentUser = _userService.GetCurrentUser();
+            var userCart = await _cartRepository.GetCartByUserAsync(currentUser);
+            if (userCart == null || !userCart.Items.Any())
+            {
+                return new CartDto { Items = new List<CartItemDto>() };
+            }
+            await _cartRepository.ClearCartAsync(userCart);
+            return new CartDto { Items = new List<CartItemDto>() };
         }
     }
 }
