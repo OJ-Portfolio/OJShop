@@ -9,5 +9,6 @@ namespace OJCommerce.Services.Vendors
         Task<bool> DeleteVendor(Guid vendorId);
         Task<VendorInfoDto> AddVendor(CreateUpdateVendorDto vendor);
         Task<VendorInfoDto> UpdateVendor(Guid id,CreateUpdateVendorDto vendor);
+        Task<bool> VendorRoleExistsAsync();
     }
 }

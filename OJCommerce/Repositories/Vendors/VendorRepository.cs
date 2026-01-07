@@ -50,9 +50,9 @@ namespace OJCommerce.Repositories.Vendors
             return vendor;
         }
 
-        public async Task<bool> ExistsForUserAsync(long uswrId)
+        public async Task<bool> ExistsForUserAsync(long userId)
         {
-            return await _context.Vendors.AnyAsync(v => v.UserId == uswrId);
+            return await _context.Vendors.AnyAsync(v => v.UserId == userId);
         }
 
     }

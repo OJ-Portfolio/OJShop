@@ -22,6 +22,7 @@ using OJCommerce.Helpers;
 using OJCommerce.Repositories.Carts;
 using OJCommerce.Services.Carts;
 using OJCommerce.Services.Checkout;
+using OJCommerce.Services.Orders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -101,6 +102,7 @@ builder.Services.AddScoped<VendorDomainService>();
 builder.Services.AddScoped<ICartRepository,CartRepository>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<ICheckoutService, CheckoutService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 builder.Services.AddControllersWithViews();
 builder.Services.AddControllers();

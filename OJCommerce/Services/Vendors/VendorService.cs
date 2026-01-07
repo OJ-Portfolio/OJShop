@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using OJCommerce.Data;
 using OJCommerce.Dtos.Vendors;
 using OJCommerce.Helpers;
 using OJCommerce.Models.Vendors;
@@ -19,8 +20,9 @@ namespace OJCommerce.Services.Vendors
         private readonly ILogger<VendorService> _logger;
         private readonly IMapper _mapper;
         private readonly VendorDomainService _vendorDomainService;
+        private readonly AppDbContext _context;
 
-        public VendorService(IVendorRepository vendorRepository, ILogger<VendorService> logger, IMapper mapper, IUserService userService, IRoleService roleService, IUserRepository userRepository, VendorDomainService vendorDomainService)
+        public VendorService(IVendorRepository vendorRepository, ILogger<VendorService> logger, IMapper mapper, IUserService userService, IRoleService roleService, IUserRepository userRepository, VendorDomainService vendorDomainService, AppDbContext context)
         {
             _logger = logger;
             _vendorRepository = vendorRepository;
@@ -29,8 +31,10 @@ namespace OJCommerce.Services.Vendors
             _roleService = roleService;
             _userRepository = userRepository;
             _vendorDomainService = vendorDomainService;
+            _context = context;
         }
-        public async Task<VendorInfoDto> AddVendor(CreateUpdateVendorDto vendor)
+
+        /*public async Task<VendorInfoDto> AddVendor(CreateUpdateVendorDto vendor)
         {
             if(!vendor.AcceptTerms)
             {
@@ -57,6 +61,66 @@ namespace OJCommerce.Services.Vendors
             return _mapper.Map<VendorInfoDto>(newVendor);
 
         }
+        */
+
+
+        public async Task<bool> VendorRoleExistsAsync()
+        {
+            // Check if a role with the name "Vendor" exists in the Roles table
+            return await _context.Roles
+                .AnyAsync(r => r.Name == "Vendor");
+        }
+
+        public async Task<VendorInfoDto> AddVendor(CreateUpdateVendorDto vendorDto)
+        {
+            if (!vendorDto.AcceptTerms)
+                throw new ArgumentException("You must accept the terms");
+
+            // Get current user
+            var currentUserId = _userService.GetCurrentUser();
+            var user = await _userRepository.GetByPublicIdAsync(currentUserId);
+            if (user == null)
+                throw new ArgumentException("User not found");
+
+            // Ensure user doesn't already have a vendor profile
+            await _vendorDomainService.EnsureUserCanCreateVendorProfileAsync(user.Id);
+
+            // Ensure vendor role exists before starting transaction
+            var roleExists = await VendorRoleExistsAsync();
+            if (!roleExists)
+                throw new ArgumentException("Vendor role does not exist");
+
+            // Use a transaction to avoid half-created vendors
+            await using var transaction = await _context.Database.BeginTransactionAsync();
+            try
+            {
+                // Create new vendor
+                var newVendor = new Vendor
+                {
+                    UserId = user.Id,
+                    StoreName = vendorDto.StoreName,
+                    CreatedAt = DateTime.UtcNow,
+                    Rating = 0f
+                };
+
+                await _vendorRepository.AddVendor(newVendor);
+
+                // Assign vendor role to user
+                await _roleService.AssignVendorRoleAsync(user);
+
+                // Commit transaction
+                await transaction.CommitAsync();
+
+                return _mapper.Map<VendorInfoDto>(newVendor);
+            }
+            catch
+            {
+                // Rollback if anything fails
+                await transaction.RollbackAsync();
+                throw; // rethrow exception
+            }
+        }
+
 
         public async Task<bool> DeleteVendor(Guid vendorId)
         {

@@ -12,8 +12,8 @@ using OJCommerce.Data;
 namespace OJCommerce.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251225011923_cartEntities")]
-    partial class cartEntities
+    [Migration("20260107110753_initial_migration")]
+    partial class initial_migration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,10 +58,7 @@ namespace OJCommerce.Migrations
                     b.Property<long>("CartId")
                         .HasColumnType("bigint");
 
-                    b.Property<Guid>("ProductId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<long>("ProductId1")
+                    b.Property<long>("ProductId")
                         .HasColumnType("bigint");
 
                     b.Property<int>("Quantity")
@@ -77,7 +74,7 @@ namespace OJCommerce.Migrations
 
                     b.HasIndex("CartId");
 
-                    b.HasIndex("ProductId1");
+                    b.HasIndex("ProductId");
 
                     b.HasIndex("VendorId");
 
@@ -183,17 +180,34 @@ namespace OJCommerce.Migrations
                     b.Property<long>("OrderId")
                         .HasColumnType("bigint");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(65,30)");
-
                     b.Property<long>("ProductId")
                         .HasColumnType("bigint");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<Guid>("PublicOrderItemId")
                         .HasColumnType("char(36)");
 
+                    b.Property<Guid>("PublicProductId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<Guid>("PublicVendorId")
+                        .HasColumnType("char(36)");
+
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
+
+                    b.Property<decimal>("UnitPrice")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<long>("VendorId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("VendorName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
@@ -480,7 +494,7 @@ namespace OJCommerce.Migrations
 
                     b.HasOne("OJCommerce.Models.Products.Product", "Product")
                         .WithMany()
-                        .HasForeignKey("ProductId1")
+                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -525,15 +539,13 @@ namespace OJCommerce.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OJCommerce.Models.Products.Product", "Product")
+                    b.HasOne("OJCommerce.Models.Products.Product", null)
                         .WithMany("OrderItems")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Order");
-
-                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("OJCommerce.Models.Products.Product", b =>
