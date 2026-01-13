@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OJCommerce.Data;
 
@@ -11,9 +12,11 @@ using OJCommerce.Data;
 namespace OJCommerce.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260112233456_currency added to several tables")]
+    partial class currencyaddedtoseveraltables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -595,21 +598,6 @@ namespace OJCommerce.Migrations
                         .HasColumnType("bigint");
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<string>("AuthorizationCode")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("CardBrand")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("CardLast4")
-                        .HasColumnType("longtext");
-
-                    b.Property<bool>("CardReusable")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<string>("CustomerCode")
-                        .HasColumnType("longtext");
 
                     b.Property<string>("EventId")
                         .IsRequired()

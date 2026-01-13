@@ -11,6 +11,7 @@ namespace OJCommerce.Dtos.Orders
         public OrderStatus Status { get; set; }
 
         public DateTime CreatedAt { get; set; }
+        public string Currency {  get; set; }
 
         public List<OrderItemDto> Items { get; set; } = new();
     }

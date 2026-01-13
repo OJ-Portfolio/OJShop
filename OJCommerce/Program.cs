@@ -23,6 +23,14 @@ using OJCommerce.Repositories.Carts;
 using OJCommerce.Services.Carts;
 using OJCommerce.Services.Checkout;
 using OJCommerce.Services.Orders;
+using OJCommerce.Services.Payments.PaymentProviders;
+using OJCommerce.Services.Payments;
+using OJCommerce.Config;
+using System.Net.Http.Headers;
+using OJCommerce.Enums.Payments;
+using Microsoft.Extensions.Options;
+using Quartz;
+using OJCommerce.Services.QuartzServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -103,6 +111,38 @@ builder.Services.AddScoped<ICartRepository,CartRepository>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<ICheckoutService, CheckoutService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IJobScheduler, QuartzJobScheduler>();
+// Configure options FIRST
+builder.Services.Configure<PaymentProviderOptions>(
+    builder.Configuration.GetSection("PaymentProvider")
+);
+
+// Register HttpClient for PaystackPaymentProvider (this auto-registers the provider)
+builder.Services.AddHttpClient<PaystackPaymentProvider>((serviceProvider, client) =>
+{
+    var options = serviceProvider.GetRequiredService<IOptions<PaymentProviderOptions>>().Value;
+
+    client.BaseAddress = new Uri(options.Paystack.BaseUrl);
+    client.DefaultRequestHeaders.Authorization =
+        new AuthenticationHeaderValue("Bearer", options.Paystack.SecretKey);
+    client.DefaultRequestHeaders.Accept.Add(
+        new MediaTypeWithQualityHeaderValue("application/json"));
+});
+
+// Register PaymentProviderSelector
+builder.Services.AddScoped<IPaymentProviderSelector, PaymentProviderSelector>();
+
+// Register collection of all payment providers
+builder.Services.AddScoped<IEnumerable<IPaymentProvider>>(sp => new IPaymentProvider[]
+{
+    sp.GetRequiredService<PaystackPaymentProvider>()
+    // When you add more providers, add them here:
+    // sp.GetRequiredService<StripePaymentProvider>(),
+    // sp.GetRequiredService<PayPalPaymentProvider>()
+});
+
+// Register PaymentService
+builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 builder.Services.AddControllersWithViews();
 builder.Services.AddControllers();
@@ -133,6 +173,25 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 }); builder.Services.AddHttpContextAccessor();
+builder.Services.AddQuartz(q =>
+{
+    // Use a scoped container for jobs
+    q.UseMicrosoftDependencyInjectionJobFactory();
+
+    // Configure job store (optional - for persistence)
+    // q.UsePersistentStore(store =>
+    // {
+    //     store.UseProperties = true;
+    //     store.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"));
+    // });
+});
+
+// Add Quartz hosted service
+builder.Services.AddQuartzHostedService(options =>
+{
+    // Wait for jobs to complete on shutdown
+    options.WaitForJobsToComplete = true;
+});
 
 var app = builder.Build();
 

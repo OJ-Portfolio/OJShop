@@ -3,12 +3,14 @@ using OJCommerce.Models.Carts;
 using OJCommerce.Models.Categories;
 using OJCommerce.Models.Coupons;
 using OJCommerce.Models.Orders;
+using OJCommerce.Models.PaymentMethods;
 using OJCommerce.Models.Products;
 using OJCommerce.Models.Roles;
 using OJCommerce.Models.Tokens;
 using OJCommerce.Models.Transactions;
 using OJCommerce.Models.Users;
 using OJCommerce.Models.Vendors;
+using OJCommerce.Models.Webhooks;
 
 namespace OJCommerce.Data
 {
@@ -31,7 +33,9 @@ namespace OJCommerce.Data
         public DbSet<UserRole> UserRoles { get; set; }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
-
+        public DbSet<PaymentWebhookEvent> PaymentWebhookEvents { get; set; }
+        public DbSet<OutboxMessage> OutboxMessages { get; set; }
+        public DbSet<SavedPaymentMethod> SavedPaymentMethods { get; set; }
     }
 
 

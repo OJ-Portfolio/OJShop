@@ -9,6 +9,7 @@ namespace OJCommerce.Models.Orders
         public long Id { get; set; }
         public Guid PublicOrderId { get; set; } = Guid.NewGuid();
         public long UserId { get; set; }
+        public string Currency { get; set; } = "NGN";  // ADD THIS
         public decimal TotalAmount { get; set; }
         public OrderStatus Status { get; set; } = OrderStatus.Pending;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;

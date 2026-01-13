@@ -1,4 +1,5 @@
 ﻿using OJCommerce.Enums;
+using OJCommerce.Enums.Payments;
 
 namespace OJCommerce.Dtos.Payments
 {

@@ -47,14 +47,17 @@ namespace OJCommerce.Services.Orders
 
                     decimal totalAmount = 0m;
 
-                    var user = await _context.Users.Where(u => u.PublicUserId == userPublicId).Select(u => u.Id).FirstOrDefaultAsync();
-                    if(user == 0)
+                    var user = await _context.Users.Where(u => u.PublicUserId == userPublicId).Select(u => new {u.Id, u.Country}).FirstOrDefaultAsync();
+                    if (user == null)
                     {
                         throw new BusinessRuleViolationException("user not found");
                     }
+                    var currency = DetermineCurrency(user.Country);
+
                     var order = new Order
                     {
-                        UserId = user,
+                        UserId = user.Id,
+                        Currency = currency,
                         Status = OrderStatus.Pending
                     };
 
@@ -138,7 +141,9 @@ namespace OJCommerce.Services.Orders
                 PublicOrderId = o.PublicOrderId,
                 TotalAmount = o.TotalAmount,
                 Status = o.Status,
+                Currency = o.Currency,
                 CreatedAt = o.CreatedAt,
+                Country = o.User.Country,
                 Items = o.Items.Select(i => new OrderItemDto
                 {
                     ProductId = i.PublicProductId,
@@ -232,5 +237,21 @@ namespace OJCommerce.Services.Orders
                 PageSize = query.PageSize
             };
         }
+
+        private string DetermineCurrency(string countryCode)
+        {
+            return countryCode switch
+            {
+                "NG" => "NGN",  // Nigeria
+                "GH" => "GHS",  // Ghana
+                "KE" => "KES",  // Kenya
+                "ZA" => "ZAR",  // South Africa
+                "US" => "USD",  // United States
+                "GB" => "GBP",  // United Kingdom
+                "EU" or "DE" or "FR" or "IT" or "ES" => "EUR",  // Eurozone
+                _ => "USD"      // Default to USD
+            };
+        }
     }
 }
+
