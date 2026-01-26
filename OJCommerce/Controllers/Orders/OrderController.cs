@@ -30,9 +30,9 @@ namespace OJCommerce.Controllers.Orders
         }
 
         [HttpPost("place-order")]
-        public async Task<IActionResult> CreateOrder()
+        public async Task<IActionResult> CreateOrder(PlaceOrderDto request)
         {
-            var order = await _orderService.CreateFromCartAsync();
+            var order = await _orderService.CreateFromCartAsync(request);
             return Ok(order);
         }
 

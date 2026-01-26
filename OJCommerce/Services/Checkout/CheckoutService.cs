@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OJCommerce.Data;
 using OJCommerce.Dtos.Checkout;
+using OJCommerce.Dtos.Shipments;
+using OJCommerce.Models.Shipments;
 using OJCommerce.Repositories.Carts;
 using OJCommerce.Services.Users;
 
@@ -28,6 +30,34 @@ namespace OJCommerce.Services.Checkout
                 result.Errors.Add("cart is empty");
                 return result;
             }
+
+            var user = await _context.Users
+            .Where(u => u.PublicUserId == publicUserId)
+            .Select(u => new { u.Id })
+            .FirstAsync();
+
+            var addresses = await _context.Set<ShippingAddress>()
+            .Where(a => a.UserId == user.Id)
+            .OrderByDescending(a => a.IsDefault)
+            .ThenByDescending(a => a.CreatedAt)
+            .Select(a => new ShippingAddressDto
+            {
+                PublicShippingAddressId = a.PublicShippingAddressId,
+                FullName = a.FullName,
+                AddressLine1 = a.AddressLine1,
+                AddressLine2 = a.AddressLine2,
+                City = a.City,
+                State = a.State,
+                Country = a.Country,
+                PostalCode = a.PostalCode,
+                PhoneNumber = a.PhoneNumber,
+                IsDefault = a.IsDefault
+            })
+            .ToListAsync();
+
+            result.SavedShippingAddresses = addresses;
+
+
             var productIds = cart.Items.Select(i => i.ProductId).Distinct().ToList();
             var products = await _context.Products.Include(p => p.Vendor).Where(p => productIds.Contains(p.Id)).ToDictionaryAsync(p => p.Id);
 

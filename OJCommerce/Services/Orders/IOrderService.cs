@@ -5,7 +5,7 @@ namespace OJCommerce.Services.Orders
 {
     public interface IOrderService
     {
-        Task<OrderDto> CreateFromCartAsync();
+        Task<OrderDto> CreateFromCartAsync(PlaceOrderDto request);
         Task<OrderDetailsDto> GetOrderAsync(Guid publicOrderId);
         Task<PagedResult<OrderSummaryDto>> GetMyOrdersAsync(OrderQueryDto query);
     }

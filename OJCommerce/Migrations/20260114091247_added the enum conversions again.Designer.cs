@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OJCommerce.Data;
 
@@ -11,9 +12,11 @@ using OJCommerce.Data;
 namespace OJCommerce.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260114091247_added the enum conversions again")]
+    partial class addedtheenumconversionsagain
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -154,40 +157,6 @@ namespace OJCommerce.Migrations
                     b.Property<Guid>("PublicOrderId")
                         .HasColumnType("char(36)");
 
-                    b.Property<long?>("ShippingAddressId")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("ShippingAddressLine1")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("ShippingAddressLine2")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("ShippingCity")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("ShippingCountry")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("ShippingFullName")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("ShippingPhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("ShippingPostalCode")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("ShippingState")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
@@ -198,8 +167,6 @@ namespace OJCommerce.Migrations
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ShippingAddressId");
 
                     b.HasIndex("UserId");
 
@@ -418,158 +385,6 @@ namespace OJCommerce.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("UserRoles");
-                });
-
-            modelBuilder.Entity("OJCommerce.Models.Shipments.Shipment", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<string>("AddressLine1")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("AddressLine2")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Carrier")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("City")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Country")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<DateTime?>("DeliveredAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("DeliveryNotes")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("DeliverySignature")
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime?>("EstimatedDeliveryDate")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<DateTime?>("FailedAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("FailureReason")
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime?>("InTransitAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<long>("OrderId")
-                        .HasColumnType("bigint");
-
-                    b.Property<DateTime?>("OutForDeliveryAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime?>("PickedUpAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("PostalCode")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<Guid>("PublicShipmentId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<string>("RecipientName")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("State")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TrackingNumber")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OrderId")
-                        .IsUnique();
-
-                    b.ToTable("Shipments");
-                });
-
-            modelBuilder.Entity("OJCommerce.Models.Shipments.ShippingAddress", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<string>("AddressLine1")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("AddressLine2")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("City")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Country")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<bool>("IsDefault")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("PostalCode")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<Guid>("PublicShippingAddressId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<string>("State")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<long>("UserId")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("ShippingAddress");
                 });
 
             modelBuilder.Entity("OJCommerce.Models.Tokens.RefreshToken", b =>
@@ -879,17 +694,11 @@ namespace OJCommerce.Migrations
 
             modelBuilder.Entity("OJCommerce.Models.Orders.Order", b =>
                 {
-                    b.HasOne("OJCommerce.Models.Shipments.ShippingAddress", "ShippingAddress")
-                        .WithMany()
-                        .HasForeignKey("ShippingAddressId");
-
                     b.HasOne("OJCommerce.Models.Users.User", "User")
                         .WithMany("Orders")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("ShippingAddress");
 
                     b.Navigation("User");
                 });
@@ -954,28 +763,6 @@ namespace OJCommerce.Migrations
                         .IsRequired();
 
                     b.Navigation("Role");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("OJCommerce.Models.Shipments.Shipment", b =>
-                {
-                    b.HasOne("OJCommerce.Models.Orders.Order", "Order")
-                        .WithOne()
-                        .HasForeignKey("OJCommerce.Models.Shipments.Shipment", "OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Order");
-                });
-
-            modelBuilder.Entity("OJCommerce.Models.Shipments.ShippingAddress", b =>
-                {
-                    b.HasOne("OJCommerce.Models.Users.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
 
                     b.Navigation("User");
                 });

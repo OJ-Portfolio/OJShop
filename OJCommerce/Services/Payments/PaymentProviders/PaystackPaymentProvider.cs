@@ -148,18 +148,5 @@ namespace OJCommerce.Services.Payments.PaymentProviders
                 .Replace("-", "")
                 .ToLowerInvariant();
         }
-
-        /*private static string[] GetPaystackChannels(PaymentMethod method)
-        {
-            return method switch
-            {
-                PaymentMethod.Card => new[] { "card" },
-                PaymentMethod.BankTransfer => new[] { "bank_transfer", "bank" },
-                PaymentMethod.USSD => new[] { "ussd" },
-                PaymentMethod.MobileMoney => new[] { "mobile_money" },
-                _ => new[] { "card" }
-            };
-        }*/
-
     }
 }

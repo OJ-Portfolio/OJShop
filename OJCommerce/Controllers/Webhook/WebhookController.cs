@@ -21,15 +21,15 @@ namespace OJCommerce.Controllers.Webhook
         [HttpPost("paystack")]
         public async Task<IActionResult> PaystackWebhook()
         {
-            _logger.LogWarning("🔥 PAYSTACK WEBHOOK HIT");
+            _logger.LogWarning(" PAYSTACK WEBHOOK HIT");
 
             using var reader = new StreamReader(Request.Body);
             var payload = await reader.ReadToEndAsync();
 
-            _logger.LogWarning("📦 Payload: {Payload}", payload);
+            _logger.LogWarning(" Payload: {Payload}", payload);
 
             var signature = Request.Headers["x-paystack-signature"].FirstOrDefault();
-            _logger.LogWarning("🔐 Signature: {Signature}", signature);
+            _logger.LogWarning(" Signature: {Signature}", signature);
 
             await _paymentService.HandleWebhookAsync(
                 PaymentProvider.Paystack,

@@ -5,6 +5,7 @@ using OJCommerce.Dtos.PagedR;
 using OJCommerce.Enums;
 using OJCommerce.Exceptions;
 using OJCommerce.Models.Orders;
+using OJCommerce.Models.Shipments;
 using OJCommerce.Repositories.Carts;
 using OJCommerce.Services.Users;
 using System.Transactions;
@@ -25,7 +26,7 @@ namespace OJCommerce.Services.Orders
             _context = context;
             _logger = logger;
         }
-        public async Task<OrderDto> CreateFromCartAsync()
+        public async Task<OrderDto> CreateFromCartAsync(PlaceOrderDto request)
         {
             var userPublicId = _userService.GetCurrentUser();
 
@@ -60,9 +61,7 @@ namespace OJCommerce.Services.Orders
                         Currency = currency,
                         Status = OrderStatus.Pending
                     };
-
-                    _context.Orders.Add(order);
-                    await _context.SaveChangesAsync();
+                    //await _context.SaveChangesAsync();
 
                     foreach (var item in cart.Items)
                     {
@@ -75,9 +74,9 @@ namespace OJCommerce.Services.Orders
 
                         product.Stock -= item.Quantity;
 
-                        _context.OrderItems.Add(new OrderItem
+                        order.Items.Add(new OrderItem
                         {
-                            OrderId = order.Id,
+                            //OrderId = order.Id,
 
                             ProductId = product.Id,
                             PublicProductId = product.PublicProductId,
@@ -99,6 +98,77 @@ namespace OJCommerce.Services.Orders
 
                     _context.CartItems.RemoveRange(cart.Items);
 
+                    if (request.ShippingAddressId.HasValue && request.ShippingAddress != null)
+                    {
+                        throw new BusinessRuleViolationException(
+                            "Provide either ShippingAddressId or ShippingAddress, not both");
+                    }
+
+                    ShippingAddress shippingAddress = null;
+
+                    if (request.ShippingAddressId.HasValue)
+                    {
+                        shippingAddress = await _context.Set<ShippingAddress>()
+                            .FirstOrDefaultAsync(a =>
+                                a.PublicShippingAddressId == request.ShippingAddressId &&
+                                a.UserId == user.Id);
+
+                        if (shippingAddress == null)
+                            throw new BusinessRuleViolationException("Invalid shipping address");
+                    }
+
+                    if (shippingAddress != null)
+                    {
+                        order.ShippingFullName = shippingAddress.FullName;
+                        order.ShippingAddressLine1 = shippingAddress.AddressLine1;
+                        order.ShippingAddressLine2 = shippingAddress.AddressLine2;
+                        order.ShippingCity = shippingAddress.City;
+                        order.ShippingState = shippingAddress.State;
+                        order.ShippingCountry = shippingAddress.Country;
+                        order.ShippingPostalCode = shippingAddress.PostalCode;
+                        order.ShippingPhoneNumber = shippingAddress.PhoneNumber;
+
+                        order.ShippingAddressId = shippingAddress.Id;
+                    }
+
+                    else if (request.ShippingAddress != null)
+                    {
+                        var input = request.ShippingAddress;
+
+                        order.ShippingFullName = input.FullName;
+                        order.ShippingAddressLine1 = input.AddressLine1;
+                        order.ShippingAddressLine2 = input.AddressLine2;
+                        order.ShippingCity = input.City;
+                        order.ShippingState = input.State;
+                        order.ShippingCountry = input.Country;
+                        order.ShippingPostalCode = input.PostalCode;
+                        order.ShippingPhoneNumber = input.PhoneNumber;
+
+                        /*if (request.SaveShippingAddress)
+                        {
+                            var newAddress = new ShippingAddress
+                            {
+                                UserId = user.Id,
+                                FullName = input.FullName,
+                                AddressLine1 = input.AddressLine1,
+                                AddressLine2 = input.AddressLine2,
+                                City = input.City,
+                                State = input.State,
+                                Country = input.Country,
+                                PostalCode = input.PostalCode,
+                                PhoneNumber = input.PhoneNumber,
+                                IsDefault = true
+                            };
+                        }*/
+                    }
+                    
+                    
+                    else
+                    {
+                        throw new BusinessRuleViolationException("Shipping address is required");
+                    }
+
+                    _context.Orders.Add(order);
                     await _context.SaveChangesAsync();
                     await transaction.CommitAsync();
 

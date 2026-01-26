@@ -6,6 +6,7 @@ using OJCommerce.Models.Orders;
 using OJCommerce.Models.PaymentMethods;
 using OJCommerce.Models.Products;
 using OJCommerce.Models.Roles;
+using OJCommerce.Models.Shipments;
 using OJCommerce.Models.Tokens;
 using OJCommerce.Models.Transactions;
 using OJCommerce.Models.Users;
@@ -36,7 +37,59 @@ namespace OJCommerce.Data
         public DbSet<PaymentWebhookEvent> PaymentWebhookEvents { get; set; }
         public DbSet<OutboxMessage> OutboxMessages { get; set; }
         public DbSet<SavedPaymentMethod> SavedPaymentMethods { get; set; }
-    }
+        public DbSet<Shipment> Shipments { get; set; }
 
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // PAYMENT TRANSACTIONS
+            modelBuilder.Entity<PaymentTransaction>(entity =>
+            {
+                entity.Property(p => p.Provider)
+                      .HasConversion<string>()
+                      .HasMaxLength(50);
+
+                entity.Property(p => p.Method)
+                      .HasConversion<string>()
+                      .HasMaxLength(50);
+
+                entity.Property(p => p.Status)
+                      .HasConversion<string>()
+                      .HasMaxLength(50);
+            });
+
+            // PAYMENT WEBHOOK EVENTS
+            modelBuilder.Entity<PaymentWebhookEvent>(entity =>
+            {
+                entity.Property(w => w.Provider)
+                      .HasConversion<string>()
+                      .HasMaxLength(50);
+
+                entity.Property(w => w.Status)
+                      .HasConversion<string>()
+                      .HasMaxLength(50);
+
+                entity.Property(w => w.CardReusable)
+                      .HasConversion<int>(); // bool → 0/1
+
+                entity.Property(w => w.Processed)
+                      .HasConversion<int>(); // bool → 0/1
+            });
+
+            //SHIPMENT STATUS
+            modelBuilder.Entity<Shipment>(entity =>
+            {
+                entity.HasIndex(s => s.OrderId).IsUnique();
+
+                entity.HasOne(s => s.Order)
+                      .WithOne()
+                      .HasForeignKey<Shipment>(s => s.OrderId)
+                      .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            base.OnModelCreating(modelBuilder);
+        }
+
+    }
 
 }

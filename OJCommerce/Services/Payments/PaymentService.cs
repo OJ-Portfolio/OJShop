@@ -240,6 +240,17 @@ namespace OJCommerce.Services.Payments
 
         public async Task<bool> HandleWebhookAsync(PaymentProvider provider, string payload, string signature)
         {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+
             var paymentProvider = Resolve(provider);
 
             // Validate signature & parse event
@@ -297,7 +308,7 @@ namespace OJCommerce.Services.Payments
         }
 
 
-        public async Task ProcessPendingWebhookAsync(long webhookEventId)
+        /*public async Task ProcessPendingWebhookAsync(long webhookEventId)
         {
             using var tx = await _context.Database.BeginTransactionAsync();
 
@@ -353,6 +364,15 @@ namespace OJCommerce.Services.Payments
 
             payment.UpdatedAt = DateTime.UtcNow;
 
+            payment.Method = dto.Data.Channel switch
+            {
+                "card" => PaymentMethod.Card,
+                "bank_transfer" => PaymentMethod.BankTransfer,
+                "ussd" => PaymentMethod.USSD,
+                "qr" => PaymentMethod.QRCode,
+                _ => payment.Method // fallback if unknown
+            };
+
             if (payment.Status == PaymentStatus.Completed)
             {
                 payment.CompletedAt = DateTime.UtcNow;
@@ -384,7 +404,7 @@ namespace OJCommerce.Services.Payments
                             SavedPaymentMethodId = Guid.NewGuid(),
                             UserId = payment.Order.User.PublicUserId,
                             Provider = evt.Provider,
-                            Method = PaymentMethod.Card,
+                            Method = payment.Method,
                             ProviderCustomerId = customerCode,
                             Last4Digits = auth.Last4,
                             CardBrand = auth.Brand,
@@ -418,6 +438,125 @@ namespace OJCommerce.Services.Payments
 
             await tx.CommitAsync();
             _logger.LogInformation("Transaction committed for webhook {WebhookId}", webhookEventId);
+        }
+        */
+
+
+        public async Task ProcessPendingWebhookAsync(long webhookEventId)
+        {
+            using var tx = await _context.Database.BeginTransactionAsync();
+
+            // 1️⃣ Load webhook event
+            var evt = await _context.PaymentWebhookEvents
+                .FirstOrDefaultAsync(e => e.Id == webhookEventId && !e.Processed);
+
+            if (evt == null) return;
+
+            // 2️⃣ Load payment + order + user
+            var payment = await _context.PaymentTransactions
+                .Include(p => p.Order)
+                .ThenInclude(o => o.User)
+                .FirstOrDefaultAsync(p =>
+                    p.Provider == evt.Provider &&
+                    p.ProviderTransactionReference == evt.TransactionReference);
+
+            if (payment == null || payment.Status is PaymentStatus.Completed or PaymentStatus.Failed)
+            {
+                // Mark webhook as processed even if payment is missing or already handled
+                evt.Processed = true;
+                evt.ProcessedAt = DateTime.UtcNow;
+                await _context.SaveChangesAsync();
+                await tx.CommitAsync();
+                return;
+            }
+
+            // 3️⃣ Deserialize webhook payload
+            var dto = JsonSerializer.Deserialize<PaystackWebhookDto>(evt.Payload, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            });
+
+            // 4️⃣ Update payment status
+            payment.Status = dto.Data.Status == "success"
+                ? PaymentStatus.Completed
+                : PaymentStatus.Failed;
+
+            payment.UpdatedAt = DateTime.UtcNow;
+            payment.Method = dto.Data.Channel switch
+            {
+                "card" => PaymentMethod.Card,
+                "bank_transfer" => PaymentMethod.BankTransfer,
+                "ussd" => PaymentMethod.USSD,
+                "qr" => PaymentMethod.QRCode,
+                _ => payment.Method
+            };
+
+            // 5️⃣ If payment completed
+            if (payment.Status == PaymentStatus.Completed)
+            {
+                payment.CompletedAt = DateTime.UtcNow;
+                payment.Order.Status = OrderStatus.Processing;
+
+                // Save reusable payment method if applicable
+                var auth = dto.Data.Authorization;
+                var customerCode = dto.Data.Customer.CustomerCode;
+
+                if (auth != null && auth.Reusable)
+                {
+                    var exists = await _context.SavedPaymentMethods.AnyAsync(m =>
+                        m.UserId == payment.Order.User.PublicUserId &&
+                        m.Provider == evt.Provider &&
+                        m.ProviderCustomerId == customerCode &&
+                        m.Last4Digits == auth.Last4
+                    );
+
+                    if (!exists)
+                    {
+                        _context.SavedPaymentMethods.Add(new SavedPaymentMethod
+                        {
+                            SavedPaymentMethodId = Guid.NewGuid(),
+                            UserId = payment.Order.User.PublicUserId,
+                            Provider = evt.Provider,
+                            Method = payment.Method,
+                            ProviderCustomerId = customerCode,
+                            Last4Digits = auth.Last4,
+                            CardBrand = auth.Brand,
+                            IsDefault = true,
+                            CreatedAt = DateTime.UtcNow
+                        });
+                    }
+                }
+
+                // 6️⃣ Raise durable outbox event for shipment creation
+                try
+                {
+                    _context.OutboxMessages.Add(new OutboxMessage
+                    {
+                        Type = nameof(PaymentCompletedEvent),
+                        Payload = JsonSerializer.Serialize(new PaymentCompletedEvent
+                        {
+                            PaymentId = payment.Id,
+                            PublicOrderId = payment.Order.PublicOrderId
+                        }),
+                        CreatedAt = DateTime.UtcNow
+                    });
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Failed to write PaymentCompletedEvent to Outbox for payment {PaymentId}", payment.Id);
+                    // Do not rethrow
+                }
+            }
+
+            // 7️⃣ Mark webhook as processed
+            evt.Processed = true;
+            evt.ProcessedAt = DateTime.UtcNow;
+
+            // 8️⃣ Save all changes and commit transaction
+            await _context.SaveChangesAsync();
+            _logger.LogInformation("Webhook {WebhookId} processed and transaction committed", webhookEventId);
+
+            await tx.CommitAsync();
         }
 
 

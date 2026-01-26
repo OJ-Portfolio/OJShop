@@ -31,6 +31,9 @@ using OJCommerce.Enums.Payments;
 using Microsoft.Extensions.Options;
 using Quartz;
 using OJCommerce.Services.QuartzServices;
+using OJCommerce.Services.Shipments;
+using OJCommerce.Jobs;
+using OJCommerce.Domain.Events;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -110,8 +113,11 @@ builder.Services.AddScoped<VendorDomainService>();
 builder.Services.AddScoped<ICartRepository,CartRepository>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<ICheckoutService, CheckoutService>();
+builder.Services.AddScoped<IShipmentService, ShipmentService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IJobScheduler, QuartzJobScheduler>();
+builder.Services.AddHostedService<OutboxProcessor>();
+builder.Services.AddScoped<PaymentCompletedEventHandler>();
 // Configure options FIRST
 builder.Services.Configure<PaymentProviderOptions>(
     builder.Configuration.GetSection("PaymentProvider")
